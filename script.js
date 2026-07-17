@@ -1,16 +1,1 @@
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
-
-menuButton?.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
-});
-
-document.querySelectorAll('.main-nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuButton?.setAttribute('aria-expanded', 'false');
-  });
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
+const menu=document.getElementById('menu'),nav=document.querySelector('nav');menu.onclick=()=>nav.classList.toggle('open');document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('searchBtn').onclick=()=>{const q=document.getElementById('q').value.trim();document.getElementById('msg').textContent=q?`For now, use “Ask Your Question” and include: ${q}`:'Type a question first.'};let problem='';const data={silent:['Check power or battery.','Inspect the dome or earmold for wax.','Replace the wax guard.','Clean microphone openings gently.'],weak:['Replace the wax guard.','Check for moisture or wax.','Clean microphones.','Schedule service if weakness continues.'],whistle:['Reinsert the dome or earmold.','Check for damage or a loose fit.','Earwax can cause feedback.','A professional fit check may be needed.'],charge:['Confirm charger power.','Clean contacts.','Reseat the device.','Try another outlet or cable.'],bluetooth:['Restart phone and hearing aids.','Turn Bluetooth off and back on.','Confirm the aids are selected as audio output.','Re-pair using manufacturer instructions if needed.'],cutout:['Check battery or charge.','Inspect for moisture or loose parts.','Notice whether it happens only during streaming.','Intermittent failure may need service.']};document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{problem=b.dataset.p;one.hidden=true;two.hidden=false});document.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>{two.hidden=true;result.hidden=false;rt.textContent=(b.dataset.s==='one'?'One hearing aid: ':'Both hearing aids: ')+b.textContent;rb.innerHTML='<ol>'+data[problem].map(x=>'<li>'+x+'</li>').join('')+'</ol>'});back.onclick=()=>{two.hidden=true;one.hidden=false};restart.onclick=()=>{result.hidden=true;one.hidden=false};

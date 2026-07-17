@@ -1,18 +1,11 @@
-HEARING AID ANSWERS WEBSITE
+UPLOAD THESE FILES TO THE ROOT OF YOUR GITHUB REPOSITORY:
+index.html
+styles.css
+script.js
+hearing-aid-answers-logo.png
 
-Files:
-- index.html
-- styles.css
-- script.js
-- assets/hearing-aid-answers-logo.png
+Allow GitHub to replace the existing files, then commit the changes.
+Wait 1–3 minutes and hard-refresh HearingAidAnswers.com.
 
-How to preview:
-1. Open index.html in any web browser.
-2. To publish, upload all files to your web host while keeping the folder structure intact.
-
-Before launch:
-- Replace hello@hearingaidanswers.com if you use a different email.
-- Connect the consultation button to your booking/payment provider.
-- Replace the mailto contact form with a secure form service.
-- Add a Privacy Policy and Terms of Use.
-- Review professional licensing, telehealth, advertising, and medical-disclaimer requirements for every state where services are offered.
+Before collecting sensitive health information or payments, add a secure form,
+privacy policy, terms, booking/payment service, and review applicable licensing rules.
