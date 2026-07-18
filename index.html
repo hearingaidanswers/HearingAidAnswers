@@ -103,5 +103,58 @@
     </div>
 
   </div>
+</section><section id="question-form" class="section">
+  <div class="wrap question-panel">
+
+    <div>
+      <span class="eyebrow">After Payment</span>
+      <h2>Tell us what is happening</h2>
+
+      <p>
+        Include the hearing aid brand, model, approximate age,
+        whether the problem affects one hearing aid or both,
+        and what you have already tried.
+      </p>
+
+      <div class="paid-note">
+        <strong>For the $19 question:</strong>
+        Please complete payment first, then submit your question.
+      </div>
+    </div>
+
+    <form action="https://formspree.io/f/xojgdlvq" method="POST">
+
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Hearing aid brand and model
+        <input type="text" name="device">
+      </label>
+
+      <label>
+        Is the problem with one hearing aid or both?
+        <input type="text" name="side">
+      </label>
+
+      <label>
+        Your question
+        <textarea name="question" rows="7" required></textarea>
+      </label>
+
+      <button class="btn primary" type="submit">
+        Send My Question
+      </button>
+
+    </form>
+
+  </div>
 </section>
 </body></html>
