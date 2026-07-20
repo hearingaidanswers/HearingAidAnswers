@@ -30,7 +30,7 @@ header {
 }
 
 .nav {
-  min-height: 96px;
+  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,12 +38,13 @@ header {
 }
 
 .nav img {
-  width: 420px;
-  height: auto;
-  max-height: 1108px;
-  object-fit: contain;
-  object-position: left center;
-  display: block;
+    width: 520px;
+    max-width: 100%;
+    height: auto;
+    max-height: 140px;
+    object-fit: contain;
+    object-position: left center;
+    display: block;
 }
 
 .nav nav {
