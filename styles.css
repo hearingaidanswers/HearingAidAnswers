@@ -38,9 +38,9 @@ header {
 }
 
 .nav img {
-  width: 245px;
+  width: 420px;
   height: auto;
-  max-height: 78px;
+  max-height: 1108px;
   object-fit: contain;
   object-position: left center;
   display: block;
